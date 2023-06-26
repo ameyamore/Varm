@@ -19,5 +19,9 @@ int main(int argc, char *argv[])
     }, Qt::QueuedConnection);
     engine.load(url);
 
+    qmlRegisterSingletonType(QUrl("qrc:/Constants/uischeme.qml"), "UiSchemes", 1, 0, "UiSchemes");
+    qmlRegisterSingletonType(QUrl("qrc:/Constants/colorscheme.qml"), "ColorSchemes", 1, 0, "ColorSchemes");
+
+
     return app.exec();
 }

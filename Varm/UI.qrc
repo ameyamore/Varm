@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>Constants/uischeme.qml</file>
+        <file>Constants/colorscheme.qml</file>
     </qresource>
 </RCC>
